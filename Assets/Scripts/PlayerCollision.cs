@@ -13,6 +13,7 @@ public class PlayerCollision : MonoBehaviour {
         {
             Debug.Log("Hit obstacle!");
             movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
